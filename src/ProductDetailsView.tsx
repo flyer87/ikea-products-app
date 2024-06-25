@@ -29,6 +29,11 @@ const ProductDetailView = (): JSX.Element => {
       <div className="product-category">Category: {product.category}</div>
       <div className="product-category">Description: {product.desription}</div>
       <div className="product-price">Price {product.price} SEK</div>
+      <img
+        src={product.imageUrl}
+        alt={product.name}
+        style={{ maxWidth: "300px" }}
+      />
     </div>
   );
 };
