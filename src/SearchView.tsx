@@ -7,7 +7,7 @@ interface Product {
   id: number;
   name: string;
   category: string;
-  description: string;
+  desription: string;
   price: number;
   imageUrl: string;
 }
@@ -48,7 +48,7 @@ const SearchView = (): JSX.Element => {
       />
       <ul>
         {searchResults.map((product: Product) => (
-          <SearchViewItem product={product} />
+          <SearchViewItem key={product.id} product={product} />
         ))}
       </ul>
     </div>

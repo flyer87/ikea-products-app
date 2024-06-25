@@ -4,7 +4,7 @@ import type { Product } from "./SearchView";
 const SearchViewItem = ({ product }: { product: Product }): JSX.Element => {
   return (
     <li key={product.id}>
-      <Link to={""} className="product-list-item">
+      <Link to={`/product/${product.id}`} className="product-list-item">
         <div>{product.name}</div>
         <div>{product.category}</div>
         <div>{product.price} SEK</div>
